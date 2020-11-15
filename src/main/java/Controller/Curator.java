@@ -5,6 +5,9 @@ import API.ProfileAPI.CharacterStatisticsAPI;
 import DTOs.CharacterStatistics;
 import DTOs.Token;
 
+//TODO Delete this class, we're not going with a curator controller for the entire API. That would mean 60+ functions
+//That's too many to handle for a client.. Just ensure the client handles their own token requests / updates through authorization.
+
 public class Curator {
 
     private Token token;

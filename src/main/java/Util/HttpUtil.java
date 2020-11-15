@@ -1,4 +1,4 @@
-package Http;
+package Util;
 
 import java.io.IOException;
 import java.net.URI;

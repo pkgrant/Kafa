@@ -1,9 +1,8 @@
 package API.ProfileAPI;
 
 import DTOs.CharacterStatistics;
-import Http.HttpUtil;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import Util.HttpUtil;
+import Util.JsonParserUtil;
 
 import java.net.http.HttpResponse;
 
@@ -22,16 +21,24 @@ public class CharacterStatisticsAPI {
 
         //TODO checks for 200 response
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        CharacterStatistics stats = null;
-        try {
-            stats = objectMapper.readValue(response.body(), CharacterStatistics.class);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
+        CharacterStatistics stats =
+                (CharacterStatistics) JsonParserUtil.parseJson(response.body(), CharacterStatistics.class);
 
         return stats;
 
+    }
+
+    public static CharacterStatistics getCharacterStatistics (String uri, String token) {
+
+        uri += "&access_token=" + token;
+        HttpResponse<String> response = HttpUtil.getRequest(uri);
+
+        //TODO checks for 200 response
+        //TODO maybe put object mapping in own method?
+
+        CharacterStatistics stats = (CharacterStatistics) JsonParserUtil.parseJson(response.body(), CharacterStatistics.class);
+
+        return stats;
     }
 
 }
