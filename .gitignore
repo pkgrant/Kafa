@@ -1,8 +1,13 @@
+### Project ###
 .idea
 *.iml
-*.class
 
-# Initial test class
+### Build ###
+*.class
+build
+
+
+### Initial test class for API endpoints ###
 *Tester.java
 
 ### Gradle is too volatile, muddies changes ###
