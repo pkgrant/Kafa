@@ -11,42 +11,42 @@ public class CharacterProfileSummary implements BlizzardDTO{
     //TODO _links
     //TODO all hrefs
 
-    private boolean isValid;
+    private boolean isValid                  = false;
 
     @JsonProperty("id")
-    private int     id;
+    private int     id                       = -1;
 
     @JsonProperty("name")
-    private String  name;
+    private String  name                     = null;
 
-    private String  gender;
+    private String  gender                   = null;
 
-    private String  faction;
+    private String  faction                  = null;
 
-    private String  race;
-    private int     raceId;
+    private String  race                     = null;
+    private int     raceId                   = -1;
 
-    private String  characterClass;
-    private int     characterClassId;
+    private String  characterClass           = null;
+    private int     characterClassId         = -1;
 
-    private String  activeSpec;
-    private int     activeSpecId;
+    private String  activeSpec               = null;
+    private int     activeSpecId             = -1;
 
-    private String  realm;
-    private int     realmId;
+    private String  realm                    = null;
+    private int     realmId                  = -1;
 
     @JsonProperty("last_login_timestamp")
-    private long    lastLogin;
+    private long    lastLogin                = -1;
 
     @JsonProperty("average_item_level")
-    private int     averageItemLevel;
+    private int     averageItemLevel         = -1;
 
     @JsonProperty("equipped_item_level")
-    private int     equippedItemLevel;
+    private int     equippedItemLevel        = -1;
 
-    private String  activeTitle;
-    private int     activeTitleId;
-    private String  activeTitleDisplayString;
+    private String  activeTitle              = null;
+    private int     activeTitleId            = -1;
+    private String  activeTitleDisplayString = null;
 
     @JsonProperty("gender")
     private void genderDeserializer(Map<String, Object> gender) {

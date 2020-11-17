@@ -1,4 +1,9 @@
 .idea
 *.iml
-*Tester.java
 *.class
+
+# Initial test class
+*Tester.java
+
+### Gradle is too volatile, muddies changes ###
+.gradle

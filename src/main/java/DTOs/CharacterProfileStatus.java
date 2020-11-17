@@ -10,10 +10,10 @@ public class CharacterProfileStatus implements BlizzardDTO{
     //TODO hrefs
 
     @JsonProperty("is_valid")
-    private boolean isValid;
+    private boolean isValid  = false;
 
     @JsonProperty("id")
-    private long    id;
+    private long    id       = -1;
 
     @Override
     public boolean isValid() {

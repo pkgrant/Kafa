@@ -14,135 +14,135 @@ public class CharacterStatistics implements BlizzardDTO {
     //TODO _links
     //TODO realm and character id for potential protected api access?
 
-    private boolean   isValid;
+    private boolean   isValid                     = false;
 
-    private String    characterName;
-    private String    characterRealm;
+    private String    characterName               = null;
+    private String    characterRealm              = null;
 
     @JsonProperty("health")
-    private int       health;
+    private int       health                      = -1;
 
     @JsonProperty("power")
-    private int       power;
+    private int       power                       = -1;
 
-    private String    powerTypeName;
-    private int       powerTypeId;
+    private String    powerTypeName               = null;
+    private int       powerTypeId                 = -1;
 
-    private int       speedRating;
-    private double    speedBonus;
+    private int       speedRating                 = -1;
+    private double    speedBonus                  = -1;
 
-    private int       strengthBase;
-    private int       strengthEffective;
+    private int       strengthBase                = -1;
+    private int       strengthEffective           = -1;
 
-    private int       agilityBase;
-    private int       agilityEffective;
+    private int       agilityBase                 = -1;
+    private int       agilityEffective            = -1;
 
-    private int       intellectBase;
-    private int       intellectEffective;
+    private int       intellectBase               = -1;
+    private int       intellectEffective          = -1;
 
-    private int       staminaBase;
-    private int       staminaEffective;
+    private int       staminaBase                 = -1;
+    private int       staminaEffective            = -1;
 
-    private int       meleeCritRating;
-    private double    meleeCritRatingBonus;
-    private double    meleeCritValue;
+    private int       meleeCritRating             = -1;
+    private double    meleeCritRatingBonus        = -1;
+    private double    meleeCritValue              = -1;
 
-    private int       meleeHasteRating;
-    private double    meleeHasteRatingBonus;
-    private double    meleeHasteValue;
+    private int       meleeHasteRating            = -1;
+    private double    meleeHasteRatingBonus       = -1;
+    private double    meleeHasteValue             = -1;
 
-    private int       masteryRating;
-    private double    masteryRatingBonus;
-    private double    masteryValue;
+    private int       masteryRating               = -1;
+    private double    masteryRatingBonus          = -1;
+    private double    masteryValue                = -1;
 
     @JsonProperty("bonus_armor")
-    private int       bonusArmor;
+    private int       bonusArmor                  = -1;
 
-    private int       lifestealRating;
-    private double    lifestealRatingBonus;
-    private double    lifestealValue;
+    private int       lifestealRating             = -1;
+    private double    lifestealRatingBonus        = -1;
+    private double    lifestealValue              = -1;
 
     @JsonProperty("versatility")
-    private double    versatility;
+    private double    versatility                 = -1;
 
     @JsonProperty("versatility_damage_done_bonus")
-    private double    versatilityDamageDoneBonus;
+    private double    versatilityDamageDoneBonus  = -1;
 
     @JsonProperty("versatility_healing_done_bonus")
-    private double    versatilityHealingDoneBonus;
+    private double    versatilityHealingDoneBonus = -1;
 
     @JsonProperty("versatility_damage_taken_bonus")
-    private double    versatilityDamageTakenBonus;
+    private double    versatilityDamageTakenBonus = -1;
 
-    private int       avoidanceRating;
-    private double    avoidanceRatingBonus;
+    private int       avoidanceRating             = -1;
+    private double    avoidanceRatingBonus        = -1;
 
     @JsonProperty("main_hand_damage_min")
-    private double    mainHandDamageMin;
+    private double    mainHandDamageMin           = -1;
 
     @JsonProperty("main_hand_damage_max")
-    private double    mainHandDamageMax;
+    private double    mainHandDamageMax           = -1;
 
     @JsonProperty("main_hand_speed")
-    private double    mainHandSpeed;
+    private double    mainHandSpeed               = -1;
 
     @JsonProperty("main_hand_dps")
-    private double    mainHandDps;
+    private double    mainHandDps                 = -1;
 
     @JsonProperty("off_hand_damage_min")
-    private double    offHandDamageMin;
+    private double    offHandDamageMin            = -1;
 
     @JsonProperty("off_hand_damage_max")
-    private double    offHandDamageMax;
+    private double    offHandDamageMax            = -1;
 
     @JsonProperty("off_hand_speed")
-    private double    offHandSpeed;
+    private double    offHandSpeed                = -1;
 
     @JsonProperty("off_hand_dps")
-    private double    offHandDps;
+    private double    offHandDps                  = -1;
 
     @JsonProperty("spell_power")
-    private double    spellPower;
+    private double    spellPower                  = -1;
 
     @JsonProperty("spell_penetration")
-    private double    spellPenetration;
+    private double    spellPenetration            = -1;
 
     private int       spellCritRating;
-    private double    spellCritRatingBonus;
-    private double    spellCritValue;
+    private double    spellCritRatingBonus        = -1;
+    private double    spellCritValue              = -1;
 
     @JsonProperty("mana_regen")
-    private double    manaRegen;
+    private double    manaRegen                   = -1;
 
     @JsonProperty("mana_regen_combat")
-    private double    manaRegenCombat;
+    private double    manaRegenCombat             = -1;
 
-    private int       armorBase;
-    private int       armorEffective;
+    private int       armorBase                   = -1;
+    private int       armorEffective              = -1;
 
-    private int       dodgeRating;
-    private double    dodgeRatingBonus;
-    private double    dodgeValue;
+    private int       dodgeRating                 = -1;
+    private double    dodgeRatingBonus            = -1;
+    private double    dodgeValue                  = -1;
 
-    private int       parryRating;
-    private double    parryRatingBonus;
-    private double    parryValue;
+    private int       parryRating                 = -1;
+    private double    parryRatingBonus            = -1;
+    private double    parryValue                  = -1;
 
-    private int       blockRating;
-    private double    blockRatingBonus;
-    private double    blockValue;
+    private int       blockRating                 = -1;
+    private double    blockRatingBonus            = -1;
+    private double    blockValue                  = -1;
 
-    private int       rangedCritRating;
-    private double    rangedCritRatingBonus;
-    private double    rangedCritValue;
+    private int       rangedCritRating            = -1;
+    private double    rangedCritRatingBonus       = -1;
+    private double    rangedCritValue             = -1;
 
-    private int       rangedHasteRating;
-    private double    rangedHasteRatingBonus;
-    private double    rangedHasteValue;
+    private int       rangedHasteRating           = -1;
+    private double    rangedHasteRatingBonus      = -1;
+    private double    rangedHasteValue            = -1;
 
-    private int       spellHasteRating;
-    private double    spellHasteRatingBonus;
-    private double    spellHasteValue;
+    private int       spellHasteRating            = -1;
+    private double    spellHasteRatingBonus       = -1;
+    private double    spellHasteValue             = -1;
 
     /*
      * Data binding private methods
