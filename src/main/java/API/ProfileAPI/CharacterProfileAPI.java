@@ -2,7 +2,6 @@ package API.ProfileAPI;
 
 import DTOs.CharacterProfileStatus;
 import DTOs.CharacterProfileSummary;
-import DTOs.CharacterStatistics;
 import Util.HttpUtil;
 import Util.JsonParserUtil;
 
@@ -12,38 +11,29 @@ public class CharacterProfileAPI {
 
     public static CharacterProfileSummary getCharacterProfileSummary(String realmSlug, String characterSlug, String token) {
 
-        //TODO: make sure slugs are lowercase
-
         String uri = "https://us.api.blizzard.com/profile/wow/character/"
                 + realmSlug + "/" + characterSlug
                 + "?namespace=profile-us&locale=en_US&access_token=" + token;
 
         HttpResponse<String> response = HttpUtil.getRequest(uri);
 
-        //TODO checks for 200 response
-
-        CharacterProfileSummary summary =
-                (CharacterProfileSummary) JsonParserUtil.parseJson(response.body(), CharacterProfileSummary.class);
-
-
-        return summary;
+        if(HttpUtil.isSuccess(response.statusCode()))
+            return (CharacterProfileSummary) JsonParserUtil.parseJson(response.body(), CharacterProfileSummary.class);
+        else
+            return new CharacterProfileSummary();
     }
 
     public static CharacterProfileSummary getCharacterProfileSummary(String uri, String token) {
-        //TODO: make sure slugs are lowercase
 
         uri += "&access_token=" + token;
         HttpResponse<String> response = HttpUtil.getRequest(uri);
 
-        //TODO checks for 200 response
-
-        CharacterProfileSummary summary =
-                (CharacterProfileSummary) JsonParserUtil.parseJson(response.body(), CharacterProfileSummary.class);
-
-        return summary;
+        if(HttpUtil.isSuccess(response.statusCode()))
+            return (CharacterProfileSummary) JsonParserUtil.parseJson(response.body(), CharacterProfileSummary.class);
+        else
+            return new CharacterProfileSummary();
     }
 
-//
 //    Returns the status and a unique ID for a character. A client should delete information about a character from their application if any of the following conditions occur:
 //    an HTTP 404 Not Found error is returned
 //    the is_valid value is false
@@ -56,36 +46,27 @@ public class CharacterProfileAPI {
 
     public static CharacterProfileStatus getCharacterProfileStatus(String realmSlug, String characterSlug, String token) {
 
-//        https://us.api.blizzard.com/profile/wow/character/sargeras/maphus/status?namespace=profile-us&locale=en_US&access_token=USUCsy6qG84hvxaFst8x5tNBloYt690PX5
-        //TODO: make sure slugs are lowercase
-
         String uri = "https://us.api.blizzard.com/profile/wow/character/"
                 + realmSlug + "/" + characterSlug + "/status"
                 + "?namespace=profile-us&locale=en_US&access_token=" + token;
 
         HttpResponse<String> response = HttpUtil.getRequest(uri);
 
-        //TODO checks for 200 response
-
-        CharacterProfileStatus status =
-                (CharacterProfileStatus) JsonParserUtil.parseJson(response.body(), CharacterProfileStatus.class);
-
-        return status;
+        if(HttpUtil.isSuccess(response.statusCode()))
+            return (CharacterProfileStatus) JsonParserUtil.parseJson(response.body(), CharacterProfileStatus.class);
+        else
+            return new CharacterProfileStatus();
     }
 
     public static CharacterProfileStatus getCharacterProfileStatus(String uri, String token) {
 
-        //TODO: make sure slugs are lowercase
-
         uri += "&access_token=" + token;
         HttpResponse<String> response = HttpUtil.getRequest(uri);
 
-        //TODO checks for 200 response
-
-        CharacterProfileStatus status =
-                (CharacterProfileStatus) JsonParserUtil.parseJson(response.body(), CharacterProfileStatus.class);
-
-        return status;
+        if(HttpUtil.isSuccess(response.statusCode()))
+            return (CharacterProfileStatus) JsonParserUtil.parseJson(response.body(), CharacterProfileStatus.class);
+        else
+            return new CharacterProfileStatus();
     }
 
 }

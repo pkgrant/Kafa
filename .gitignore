@@ -6,4 +6,4 @@
 *Tester.java
 
 ### Gradle is too volatile, muddies changes ###
-.gradle
+.gradle/*

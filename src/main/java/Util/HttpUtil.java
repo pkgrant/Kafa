@@ -1,5 +1,7 @@
 package Util;
 
+import DTOs.CharacterProfileStatus;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -26,6 +28,15 @@ public class HttpUtil {
         }
 
         return response;
+    }
+
+    public static boolean isSuccess(int response) {
+        if(response > 199 && response < 300) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 }
