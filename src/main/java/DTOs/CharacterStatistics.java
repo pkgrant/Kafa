@@ -6,13 +6,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.HashMap;
 import java.util.Map;
 
-//TODO maybe a summary of CharacterStatistics class since this is so large
-
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CharacterStatistics implements BlizzardDTO {
 
     //TODO _links
-    //TODO realm and character id for potential protected api access?
 
     private boolean   isValid                     = false;
 
