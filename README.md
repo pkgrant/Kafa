@@ -17,16 +17,16 @@ Using your ClientID and Client Secret you will generate an authorization token.
 //TODO add imports
 
 ```java
-String clientId     = "..."
-String clientSecret = "..."
+String clientId     = "...";
+String clientSecret = "...";
 Token token = API.Authorization.generateToken(clientId, clientSecret);
 ```
 
 From there you can now use that token to make requests. Ensure realm and character names are all lowercase!
 
 ```java
-String realm     = "..."
-String character = "..."
+String realm     = "...";
+String character = "...";
 CharacterStatistics stats = API.ProfileAPI.getCharacterStatistics(realm, character, token);
 ```
 
