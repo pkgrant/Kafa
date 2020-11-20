@@ -1,0 +1,9 @@
+{
+    "_links": {
+      "self": {
+        "href": "https://us.api.blizzard.com/profile/wow/character/sargeras/maphus/status?namespace=profile-us"
+      }
+    },
+    "id": 186341478,
+    "is_valid": true
+  }
