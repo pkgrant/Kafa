@@ -5,8 +5,7 @@ import Util.TestUtil;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 /**
  * Test to make sure CharacterProfileSummary is properly loaded from mock data

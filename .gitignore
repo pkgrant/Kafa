@@ -6,7 +6,6 @@
 *.class
 build
 
-
 ### Initial test class for API endpoints ###
 *Tester.java
 
