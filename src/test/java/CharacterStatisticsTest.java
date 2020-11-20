@@ -5,8 +5,7 @@ import Util.TestUtil;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 /**
  * Test to make sure CharacterProfileSummary is properly loaded from mock data
@@ -23,6 +22,8 @@ public class CharacterStatisticsTest {
     @Test
     public void testJsonParser() {
         CharacterStatistics stats = (CharacterStatistics) JsonParserUtil.parseJson(characterStatsJson, CharacterStatistics.class);
+
+        assertNull(stats.getCharacterName());
 
         assertNotNull(stats.getCharacterName());
         assertNotNull(stats.getCharacterRealm());
