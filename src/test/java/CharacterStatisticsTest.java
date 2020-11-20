@@ -23,8 +23,6 @@ public class CharacterStatisticsTest {
     public void testJsonParser() {
         CharacterStatistics stats = (CharacterStatistics) JsonParserUtil.parseJson(characterStatsJson, CharacterStatistics.class);
 
-        assertNull(stats.getCharacterName());
-
         assertNotNull(stats.getCharacterName());
         assertNotNull(stats.getCharacterRealm());
 
