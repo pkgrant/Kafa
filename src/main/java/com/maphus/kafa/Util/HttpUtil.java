@@ -1,6 +1,4 @@
-package Util;
-
-import DTOs.CharacterProfileStatus;
+package com.maphus.kafa.Util;
 
 import java.io.IOException;
 import java.net.URI;

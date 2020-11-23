@@ -1,4 +1,4 @@
-package DTOs;
+package com.maphus.kafa.DTOs;
 
 public interface BlizzardDTO {
     public boolean isValid();

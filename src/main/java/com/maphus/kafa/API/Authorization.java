@@ -1,6 +1,6 @@
-package API;
+package com.maphus.kafa.API;
 
-import DTOs.Token;
+import com.maphus.kafa.DTOs.Token;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

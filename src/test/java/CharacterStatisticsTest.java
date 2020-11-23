@@ -1,7 +1,6 @@
-import DTOs.CharacterProfileSummary;
-import DTOs.CharacterStatistics;
-import Util.JsonParserUtil;
-import Util.TestUtil;
+import com.maphus.kafa.DTOs.CharacterStatistics;
+import com.maphus.kafa.Util.JsonParserUtil;
+import com.maphus.kafa.Util.TestUtil;
 import org.junit.Before;
 import org.junit.Test;
 

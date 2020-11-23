@@ -1,9 +1,9 @@
-package API.ProfileAPI;
+package com.maphus.kafa.API.ProfileAPI;
 
-import DTOs.CharacterProfileStatus;
-import DTOs.CharacterProfileSummary;
-import Util.HttpUtil;
-import Util.JsonParserUtil;
+import com.maphus.kafa.DTOs.CharacterProfileStatus;
+import com.maphus.kafa.DTOs.CharacterProfileSummary;
+import com.maphus.kafa.Util.HttpUtil;
+import com.maphus.kafa.Util.JsonParserUtil;
 
 import java.net.http.HttpResponse;
 

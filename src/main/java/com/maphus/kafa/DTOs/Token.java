@@ -1,4 +1,4 @@
-package DTOs;
+package com.maphus.kafa.DTOs;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
