@@ -1,6 +1,6 @@
-package Util;
+package com.maphus.kafa.Util;
 
-import DTOs.BlizzardDTO;
+import com.maphus.kafa.DTOs.BlizzardDTO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
