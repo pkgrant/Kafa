@@ -35,6 +35,15 @@ public class CharacterProfileSummary implements BlizzardDTO{
     private String  realm                    = null;
     private int     realmId                  = -1;
 
+    @JsonProperty("level")
+    private int     level                    = -1;
+
+    @JsonProperty("experience")
+    private int     experience               = -1;
+
+    @JsonProperty("achievement_points")
+    private int     achievementPoints        = -1;
+
     @JsonProperty("last_login_timestamp")
     private long    lastLogin                = -1;
 
@@ -191,6 +200,30 @@ public class CharacterProfileSummary implements BlizzardDTO{
 
     public void setRealmId(int realmId) {
         this.realmId = realmId;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getExperience() {
+        return experience;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public int getAchievementPoints() {
+        return achievementPoints;
+    }
+
+    public void setAchievementPoints(int achievementPoints) {
+        this.achievementPoints = achievementPoints;
     }
 
     public long getLastLogin() {
