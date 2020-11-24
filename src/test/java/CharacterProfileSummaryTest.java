@@ -44,6 +44,12 @@ public class CharacterProfileSummaryTest {
         assertNotNull(summary.getRealm());
         assertNotEquals(-1, summary.getRealmId());
 
+        assertNotEquals(-1, summary.getLevel());
+
+        assertNotEquals(-1, summary.getExperience());
+
+        assertNotEquals(-1, summary.getAchievementPoints());
+
         assertNotEquals(-1, summary.getLastLogin());
 
         assertNotEquals(-1, summary.getAverageItemLevel());
