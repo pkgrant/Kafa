@@ -47,7 +47,7 @@ public class CharacterProfileSummaryTest {
         assertNotEquals(-1, summary.getLevel());
 
         assertNotEquals(-1, summary.getExperience());
-        
+
         assertNotEquals(-1, summary.getAchievementPoints());
 
         assertNotEquals(-1, summary.getLastLogin());
