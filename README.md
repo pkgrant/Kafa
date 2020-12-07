@@ -2,6 +2,12 @@
 
 Blizzard API implementation in Java. Wraps Blizzard API endpoints into POJOs.
 
+## Status
+
+![master](https://github.com/pkgrant/Kafa/workflows/master/badge.svg)
+
+![development](https://github.com/pkgrant/Kafa/workflows/development/badge.svg)
+
 ## Installation
 
 A jar is located in releases. Each release lists the currently supported endpoints.
